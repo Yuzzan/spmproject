@@ -1,0 +1,621 @@
+body{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;background-color:#f2f2f2;}
+img{max-width:100% !important;height:auto;}
+p {	margin: 0;	 } a{text-decoration:none;}
+h1{font-size:36pt;}
+h2{font-size:31.5pt;}
+h3{font-size:24.5pt;}
+h1 a{text-decoration:none;}
+input, textarea{-webkit-appearance:none;-webkit-border-radius:0;padding:0;margin:0;}
+.clear{clear:both;}
+.overflow{overflow:auto;-webkit-overflow-scrolling:touch;}
+.navigation a, .postli, .top12li, .tptn_list_count, .menuinside, .tagbox a, .sharesinglebtn, .btnshare, .stats a, .mm-list > li, .foottitlelink, .menuinside, .postinfobox a, .aboutdescription a, .btnmain00, .backtocollection, .popularbtn, .viewbtn, .download, .select, .downloadother, .taglist a, .ipapersco{transition:all 0.3s;-webkit-transition:all 0.3s;}
+.btnmain00:hover, .searchbox input[type=text]:focus{-webkit-box-shadow:0px 0px 0px 1px #27c9e0;-moz-box-shadow:0px 0px 0px 1px #27c9e0;box-shadow:0px 0px 0px 1px #27c9e0;}
+.popularbtn, .btnmain00, .selectanddown, .multibox, .searchbox, .navigation a, .ipapersco, .topmenu, .popularbtn, .downloadbox{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:0px 1px 0px 0px rgba(0, 0, 0, 0.05);-moz-box-shadow:0px 1px 0px 0px rgba(0, 0, 0, 0.05);box-shadow:0px 1px 0px 0px rgba(0, 0, 0, 0.05);}
+#header{height:60px;width:100%;}
+.headerbox{height:100%;width:100%;}
+.headericon{height:60px;width:60px;position:fixed;background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papers_logo-icon-new11.png);background-position:left;background-size:contain;background-repeat:no-repeat;z-index:101}
+.headercenter{height:60px;width:60%;margin-left:20%;position:relative;float:left;background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papers_logo-letter-new11.png);background-position:center;background-size:contain;background-repeat:no-repeat;}
+.headerright{height:100%;width:20%;float:right;background-image:url(https://papers.co/wp-content/themes/simon-wp-framework/images/papers-search-1.png);background-position:right;background-size:contain;background-repeat:no-repeat;}
+.topmenu{height:40px;width:400px;margin:4px auto 0;background-color:#fff;overflow:hidden}
+.topmenu a{color:#666;width:25%;margin:0;display:inline-block;text-align:center;font-size:11.5pt;height:40px;line-height:40px;float:left;}
+.topmenu a:hover{color:#000;background-color:#f9f9f9;}
+.ppall, a.ppall{color:#05b3c1 !important;background-color:#f9f9f9;}
+.appstore{width:150px;height:50px;opacity:0.85;position:fixed;background-repeat:no-repeat;background-size:contain;right:10px;bottom:10px;background-color:transparent;z-index:99;display:block;}
+.appstore{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImxpdmV0eXBlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDExOS43IDQwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMTkuNyA0MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtvcGFjaXR5OjAuOTU7fS5zdDF7ZmlsbDp1cmwoI1NWR0lEXzFfKTt9LnN0MntmaWxsOiNGRkZGRkY7fS5zdDN7ZmlsbDojMTExMTExO308L3N0eWxlPjxnIGNsYXNzPSJzdDAiPjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNTkuODMyIiB5MT0iMS44IiB4Mj0iNTkuODMyIiB5Mj0iMzcuODk4NCI+PHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRkZGRiIvPjxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNGMkYyRjIiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik04LjQsMzkuNWMtNC40LDAtNy45LTMuNi03LjktNy45VjguNGMwLTQuNCwzLjYtNy45LDcuOS03LjloMTAyLjhjNC40LDAsNy45LDMuNiw3LjksNy45djIzLjFjMCw0LjQtMy42LDcuOS03LjksNy45SDguNHoiLz48cGF0aCBjbGFzcz0ic3QyIiBkPSJNMTExLjIsMWM0LjEsMCw3LjQsMy4zLDcuNCw3LjR2MjMuMWMwLDQuMS0zLjMsNy40LTcuNCw3LjRIOC40QzQuMywzOSwxLDM1LjcsMSwzMS42VjguNEMxLDQuMyw0LjMsMSw4LjQsMUgxMTEuMiBNMTExLjIsMEg4LjRDMy44LDAsMCwzLjgsMCw4LjR2MjMuMUMwLDM2LjIsMy44LDQwLDguNCw0MGgxMDIuOGM0LjcsMCw4LjQtMy44LDguNC04LjRWOC40QzExOS43LDMuOCwxMTUuOSwwLDExMS4yLDBMMTExLjIsMHoiLz48L2c+PHRpdGxlPkRvd25sb2FkX29uX3RoZV9BcHBfU3RvcmVfQmFkZ2VfVVMtVUtfUkdCX2Jsa180U1ZHXzA5MjkxNzwvdGl0bGU+PGc+PGc+PGcgaWQ9Il9Hcm91cF8iPjxnIGlkPSJfR3JvdXBfMiI+PGcgaWQ9Il9Hcm91cF8zIj48cGF0aCBpZD0iX1BhdGhfIiBjbGFzcz0ic3QzIiBkPSJNMjYuNCwyMC4zYzAtMS42LDAuOS0zLjEsMi4yLTRjLTAuOS0xLjItMi4zLTItMy44LTIuMWMtMS42LTAuMi0zLjIsMS00LDFjLTAuOCwwLTIuMS0wLjktMy40LTAuOWMtMS44LDAuMS0zLjQsMS00LjMsMi42Yy0xLjgsMy4yLTAuNSw3LjksMS4zLDEwLjVjMC45LDEuMywxLjksMi43LDMuMywyLjZjMS4zLTAuMSwxLjgtMC44LDMuNC0wLjhjMS42LDAsMiwwLjgsMy40LDAuOGMxLjQsMCwyLjMtMS4zLDMuMi0yLjVjMC42LTAuOSwxLjEtMS45LDEuNC0zQzI3LjUsMjMuOCwyNi40LDIyLjIsMjYuNCwyMC4zeiIvPjxwYXRoIGlkPSJfUGF0aF8yIiBjbGFzcz0ic3QzIiBkPSJNMjMuNywxMi42YzAuOC0wLjksMS4yLTIuMSwxLjEtMy4zYy0xLjIsMC4xLTIuMywwLjctMy4xLDEuNmMtMC44LDAuOS0xLjIsMi0xLjEsMy4yQzIxLjksMTQuMSwyMywxMy41LDIzLjcsMTIuNnoiLz48L2c+PC9nPjxnPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik00My4xLDI2LjloLTQuNWwtMS4xLDMuMmgtMS45bDQuMy0xMS45aDJsNC4zLDExLjloLTEuOUw0My4xLDI2Ljl6IE0zOSwyNS40aDMuNmwtMS44LTUuMmgwTDM5LDI1LjR6Ii8+PHBhdGggY2xhc3M9InN0MyIgZD0iTTU1LjQsMjUuN2MwLDIuNy0xLjQsNC40LTMuNiw0LjRjLTEuMSwwLjEtMi4yLTAuNS0yLjctMS41aDB2NC4zaC0xLjhWMjEuNGgxLjd2MS40aDBjMC42LTEsMS42LTEuNiwyLjgtMS41QzUzLjksMjEuMyw1NS40LDIzLjEsNTUuNCwyNS43eiBNNTMuNSwyNS43YzAtMS43LTAuOS0yLjktMi4zLTIuOWMtMS40LDAtMi4zLDEuMi0yLjMsMi45YzAsMS43LDAuOSwyLjksMi4zLDIuOUM1Mi42LDI4LjcsNTMuNSwyNy41LDUzLjUsMjUuN3oiLz48cGF0aCBjbGFzcz0ic3QzIiBkPSJNNjQuOSwyNS43YzAsMi43LTEuNCw0LjQtMy42LDQuNGMtMS4xLDAuMS0yLjItMC41LTIuNy0xLjVoMHY0LjNoLTEuOFYyMS40aDEuN3YxLjRoMGMwLjYtMSwxLjYtMS42LDIuOC0xLjVDNjMuNCwyMS4zLDY0LjksMjMuMSw2NC45LDI1Ljd6IE02My4xLDI1LjdjMC0xLjctMC45LTIuOS0yLjMtMi45Yy0xLjQsMC0yLjMsMS4yLTIuMywyLjljMCwxLjcsMC45LDIuOSwyLjMsMi45QzYyLjIsMjguNyw2My4xLDI3LjUsNjMuMSwyNS43TDYzLjEsMjUuN3oiLz48cGF0aCBjbGFzcz0ic3QzIiBkPSJNNzEuMiwyNi44YzAuMSwxLjIsMS4zLDEuOSwyLjgsMS45YzEuNSwwLDIuNi0wLjgsMi42LTEuOGMwLTAuOS0wLjYtMS41LTIuMi0xLjhsLTEuNS0wLjRjLTIuMi0wLjUtMy4yLTEuNS0zLjItMy4yYzAtMiwxLjgtMy41LDQuMy0zLjVjMi41LDAsNC4yLDEuNCw0LjMsMy41aC0xLjhjLTAuMS0xLjItMS4xLTEuOS0yLjUtMS45Yy0xLjQsMC0yLjQsMC43LTIuNCwxLjhjMCwwLjgsMC42LDEuMywyLjIsMS43bDEuMywwLjNjMi40LDAuNiwzLjQsMS42LDMuNCwzLjNjMCwyLjItMS44LDMuNi00LjYsMy42Yy0yLjYsMC00LjQtMS40LTQuNS0zLjVMNzEuMiwyNi44eiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik04Mi4zLDE5LjR2MmgxLjZ2MS40aC0xLjZ2NC44YzAsMC43LDAuMywxLjEsMS4xLDEuMWMwLjIsMCwwLjQsMCwwLjYsMFYzMGMtMC4zLDAuMS0wLjcsMC4xLTEsMC4xYy0xLjcsMC0yLjQtMC43LTIuNC0yLjN2LTVoLTEuM3YtMS40aDEuM3YtMkg4Mi4zeiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik04NC45LDI1LjdjMC0yLjcsMS42LTQuNCw0LjEtNC40YzIuNSwwLDQuMSwxLjcsNC4xLDQuNGMwLDIuNy0xLjYsNC40LTQuMSw0LjRDODYuNSwzMC4yLDg0LjksMjguNSw4NC45LDI1Ljd6IE05MS4zLDI1LjdjMC0xLjktMC45LTMtMi4zLTNjLTEuNCwwLTIuMywxLjEtMi4zLDNjMCwxLjksMC45LDMsMi4zLDNDOTAuNCwyOC43LDkxLjMsMjcuNiw5MS4zLDI1LjdMOTEuMywyNS43eiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik05NC41LDIxLjRoMS43djEuNWgwYzAuMi0wLjksMS4xLTEuNiwyLjEtMS42YzAuMiwwLDAuNCwwLDAuNiwwLjF2MS43Yy0wLjMtMC4xLTAuNS0wLjEtMC44LTAuMWMtMSwwLTEuOCwwLjctMS45LDEuN2MwLDAuMSwwLDAuMiwwLDAuM3Y1LjFoLTEuOEw5NC41LDIxLjR6Ii8+PHBhdGggY2xhc3M9InN0MyIgZD0iTTEwNy4xLDI3LjVjLTAuMiwxLjYtMS44LDIuNi0zLjcsMi42Yy0yLjUsMC00LjEtMS43LTQuMS00LjRjMC0yLjcsMS42LTQuNSw0LTQuNWMyLjQsMCwzLjksMS42LDMuOSw0LjN2MC42aC02LjF2MC4xYy0wLjEsMS4yLDAuOCwyLjMsMiwyLjRjMC4xLDAsMC4yLDAsMC4zLDBjMC45LDAuMSwxLjctMC40LDItMS4yTDEwNy4xLDI3LjV6IE0xMDEuMSwyNC45aDQuM2MwLjEtMS4xLTAuOC0yLjEtMi0yLjJjLTAuMSwwLTAuMSwwLTAuMiwwQzEwMi4xLDIyLjcsMTAxLjEsMjMuNywxMDEuMSwyNC45QzEwMS4xLDI0LjksMTAxLjEsMjQuOSwxMDEuMSwyNC45eiIvPjwvZz48L2c+PC9nPjxnIGlkPSJfR3JvdXBfNCI+PGc+PHBhdGggY2xhc3M9InN0MyIgZD0iTTM4LjgsOS4zYzEuNC0wLjEsMi42LDAuOSwyLjcsMi4zYzAsMC4yLDAsMC4zLDAsMC41YzAsMS44LTEsMi45LTIuNywyLjloLTIuMVY5LjNIMzguOHogTTM3LjYsMTQuMmgxLjFjMSwwLjEsMS44LTAuNywxLjktMS43YzAtMC4xLDAtMC4yLDAtMC40YzAuMS0xLTAuNi0xLjktMS41LTJjLTAuMSwwLTAuMiwwLTAuMywwaC0xLjFWMTQuMnoiLz48cGF0aCBjbGFzcz0ic3QzIiBkPSJNNDIuNSwxMi44Yy0wLjEtMS4xLDAuNy0yLjEsMS44LTIuMmMxLjEtMC4xLDIuMSwwLjcsMi4yLDEuOGMwLDAuMSwwLDAuMywwLDAuNGMwLjEsMS4xLTAuNywyLjEtMS44LDIuMmMtMS4xLDAuMS0yLjEtMC43LTIuMi0xLjhDNDIuNSwxMy4xLDQyLjUsMTMsNDIuNSwxMi44eiBNNDUuNywxMi44YzAtMC45LTAuNC0xLjUtMS4yLTEuNWMtMC43LDAtMS4yLDAuNS0xLjIsMS41YzAsMC45LDAuNCwxLjUsMS4yLDEuNUM0NS4zLDE0LjMsNDUuNywxMy44LDQ1LjcsMTIuOEw0NS43LDEyLjh6Ii8+PHBhdGggY2xhc3M9InN0MyIgZD0iTTUxLjksMTVoLTAuOWwtMC45LTMuMmgtMC4xTDQ5LjIsMTVoLTAuOWwtMS4yLTQuM0g0OGwwLjgsMy4zaDAuMWwwLjktMy4zaDAuOGwwLjksMy4zaDAuMWwwLjgtMy4zaDAuOEw1MS45LDE1eiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik01NC4xLDEwLjdoMC44djAuN0g1NWMwLjItMC41LDAuNy0wLjgsMS4zLTAuOGMwLjgtMC4xLDEuNCwwLjUsMS41LDEuM2MwLDAuMSwwLDAuMiwwLDAuM1YxNWgtMC44di0yLjZjMC0wLjctMC4zLTEtMC45LTFjLTAuNSwwLTEsMC40LTEsMC45YzAsMC4xLDAsMC4xLDAsMC4yVjE1aC0wLjhMNTQuMSwxMC43eiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik01OS4xLDlINjB2NmgtMC44Vjl6Ii8+PHBhdGggY2xhc3M9InN0MyIgZD0iTTYxLjIsMTIuOGMtMC4xLTEuMSwwLjctMi4xLDEuOC0yLjJjMS4xLTAuMSwyLjEsMC43LDIuMiwxLjhjMCwwLjEsMCwwLjMsMCwwLjRjMC4xLDEuMS0wLjcsMi4xLTEuOCwyLjJjLTEuMSwwLjEtMi4xLTAuNy0yLjItMS44QzYxLjEsMTMuMSw2MS4xLDEzLDYxLjIsMTIuOHogTTY0LjMsMTIuOGMwLTAuOS0wLjQtMS41LTEuMi0xLjVjLTAuNywwLTEuMiwwLjUtMS4yLDEuNWMwLDAuOSwwLjQsMS41LDEuMiwxLjVDNjMuOSwxNC4zLDY0LjMsMTMuOCw2NC4zLDEyLjh6Ii8+PHBhdGggY2xhc3M9InN0MyIgZD0iTTY2LjEsMTMuOGMwLTAuOCwwLjYtMS4yLDEuNi0xLjNsMS4yLTAuMVYxMmMwLTAuNS0wLjMtMC43LTAuOS0wLjdjLTAuNSwwLTAuOCwwLjItMC45LDAuNWgtMC44YzAuMS0wLjcsMC44LTEuMiwxLjgtMS4yYzEuMSwwLDEuNywwLjUsMS43LDEuNFYxNWgtMC44di0wLjZoLTAuMWMtMC4zLDAuNC0wLjgsMC43LTEuMywwLjdjLTAuNywwLjEtMS40LTAuNC0xLjQtMS4yQzY2LjEsMTMuOSw2Ni4xLDEzLjgsNjYuMSwxMy44eiBNNjguOSwxMy40VjEzbC0xLDAuMWMtMC42LDAtMC45LDAuMi0wLjksMC42YzAsMC40LDAuMywwLjYsMC44LDAuNkM2OC4zLDE0LjQsNjguOCwxNCw2OC45LDEzLjRDNjguOSwxMy40LDY4LjksMTMuNCw2OC45LDEzLjR6Ii8+PHBhdGggY2xhc3M9InN0MyIgZD0iTTcwLjgsMTIuOGMwLTEuNCwwLjctMi4yLDEuOC0yLjJjMC41LDAsMS4xLDAuMywxLjMsMC44SDc0VjloMC44djZINzR2LTAuN0g3NGMtMC4zLDAuNS0wLjgsMC44LTEuMywwLjdDNzEuNSwxNS4xLDcwLjgsMTQuMiw3MC44LDEyLjh6IE03MS43LDEyLjhjMCwwLjksMC40LDEuNSwxLjEsMS41YzAuNywwLDEuMi0wLjYsMS4yLTEuNWMwLTAuOS0wLjQtMS41LTEuMi0xLjVDNzIuMSwxMS40LDcxLjcsMTEuOSw3MS43LDEyLjhMNzEuNywxMi44eiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik03OC4zLDEyLjhjLTAuMS0xLjEsMC43LTIuMSwxLjgtMi4yczIuMSwwLjcsMi4yLDEuOGMwLDAuMSwwLDAuMywwLDAuNGMwLjEsMS4xLTAuNywyLjEtMS44LDIuMmMtMS4xLDAuMS0yLjEtMC43LTIuMi0xLjhDNzguMywxMy4xLDc4LjMsMTMsNzguMywxMi44eiBNODEuNSwxMi44YzAtMC45LTAuNC0xLjUtMS4yLTEuNWMtMC43LDAtMS4yLDAuNS0xLjIsMS41YzAsMC45LDAuNCwxLjUsMS4yLDEuNUM4MS4xLDE0LjMsODEuNSwxMy44LDgxLjUsMTIuOHoiLz48cGF0aCBjbGFzcz0ic3QzIiBkPSJNODMuNSwxMC43aDAuOHYwLjdoMC4xYzAuMi0wLjUsMC43LTAuOCwxLjMtMC44YzAuOC0wLjEsMS40LDAuNSwxLjUsMS4zYzAsMC4xLDAsMC4yLDAsMC4zVjE1aC0wLjh2LTIuNmMwLTAuNy0wLjMtMS0wLjktMWMtMC41LDAtMSwwLjQtMSwwLjljMCwwLjEsMCwwLjEsMCwwLjJWMTVoLTAuOFYxMC43eiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik05Miw5LjZ2MS4xaDAuOXYwLjdIOTJ2Mi4yYzAsMC41LDAuMiwwLjYsMC42LDAuNmMwLjEsMCwwLjIsMCwwLjMsMFYxNWMtMC4yLDAtMC4zLDAtMC41LDBjLTAuOSwwLTEuMy0wLjMtMS4zLTEuMnYtMi40aC0wLjd2LTAuN2gwLjdWOS42SDkyeiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik05NC4xLDloMC44djIuNEg5NWMwLjItMC41LDAuOC0wLjgsMS4zLTAuOGMwLjgsMCwxLjQsMC42LDEuNSwxLjNjMCwwLjEsMCwwLjIsMCwwLjNWMTVoLTAuOHYtMi42YzAtMC43LTAuMy0xLTAuOS0xYy0wLjYsMC0xLDAuNC0xLjEsMC45YzAsMC4xLDAsMC4xLDAsMC4yVjE1aC0wLjhMOTQuMSw5eiIvPjxwYXRoIGNsYXNzPSJzdDMiIGQ9Ik0xMDIuNywxMy44Yy0wLjIsMC44LTEsMS4zLTEuOSwxLjJjLTEuMSwwLTItMC44LTItMS45YzAtMC4xLDAtMC4yLDAtMC4zYy0wLjEtMS4xLDAuNi0yLjEsMS43LTIuMmMwLjEsMCwwLjIsMCwwLjMsMGMxLjIsMCwxLjksMC44LDEuOSwyLjJ2MC4zaC0zdjBjLTAuMSwwLjYsMC40LDEuMiwxLDEuMmMwLDAsMC4xLDAsMC4xLDBjMC40LDAsMC44LTAuMiwxLTAuNUwxMDIuNywxMy44eiBNOTkuNywxMi40aDIuMmMwLTAuNi0wLjQtMS4xLTEtMS4xYzAsMC0wLjEsMC0wLjEsMEMxMDAuMiwxMS4zLDk5LjcsMTEuOCw5OS43LDEyLjRDOTkuNywxMi40LDk5LjcsMTIuNCw5OS43LDEyLjRMOTkuNywxMi40eiIvPjwvZz48L2c+PC9nPjwvc3ZnPg==);}
+.appstore:hover{opacity:1;}
+.spacing1{letter-spacing:0 !important;}
+.spacing2{letter-spacing:0 !important;}
+.italic{color:rgba(0,0,0,0.4);font-weight:normal !important;}
+.number{color:rgba(0,0,0,0.5);margin-right:4px;}
+.gray{color:rgba(0,0,0,0.3);}
+.normal{font-weight:normal;}
+body, html{margin:0px;padding:0px;}
+.container{width:100%;}
+.postcontainer{background-size:contain;background-repeat:no-repeat;background-position:top;}
+.singlecontainer{}
+.adbox{padding:0;text-align:center;margin:0 auto;min-width:728px;}
+.adweb{padding:0;text-align:center;margin:0 auto;width:100%;}
+.content{text-align:center;width:728px;margin:0 auto;position:relative;display:table;}
+.footerbox{width:728px;margin:0 auto;display:table;}
+.post, .type-post, .type-page{padding:0px;margin:0 auto;}
+.aligncenter{display:block;margin-left:auto;margin-right:auto;}
+.content-postimages{text-align:center;width:100%;margin:0 auto;position:relative;display:table;}
+.postimages{display:table;width:1024px;margin:0 auto;overflow:hidden !important;background-color:#fff;border-radius:12px;}
+.postimages-single{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+.top12ul, .postul{list-style:decimal;padding:0 !important;margin:0px auto;width:100%;display:table;background-color:#222;}
+.postli, .top12li{position:relative;float:left;width:25%;height:0;padding-bottom:25%;overflow:hidden;text-align:right}
+.postli img:hover, .top12li img:hover{opacity:0.98}
+.triangle{width:0;height:0;border-style:solid;border-width:8px 8px 0 0;position:absolute;z-index:4;}
+.postinfoboxnew{color:rgba(0,0,0,0.4)}
+.new{border-color:#f2f2f2 transparent transparent transparent;}
+.hot{border-color:#27c9e0 transparent transparent transparent;}
+.tptn_list_count,  .postlidesc{display:table;position:absolute;width:98%;bottom:0;height:0;padding-top:1.5%;padding-bottom:2%;font-size:8pt;text-align:right;z-index:2;color:rgba(255,255,255,0.8);pointer-events:none;text-shadow:0 1px 0 rgba(0,0,0,0.1);}
+.tptn_list_count,  .postlidesc{padding-right:8px}
+.postlinew{color:#27c9e0;padding-left:8px;float:left;}
+.postlilove{float:right}
+.postlitotal{padding-left:8px;}
+.titlebarbox{width:100%;margin:0 auto;text-align:center;padding:}
+.titlebar{color:#05b3c1;font-size:13pt;text-transform:capitalize;width:98%;margin-left:1%;}
+.description{color:#aaa;font-weight:normal;text-transform:none;margin-left:10px;}
+.description a{color:#27c9e0;}
+.description a:hover{color:#1076af;}
+.catthumb{display:block;width:100%;height:100px;background-size:cover;background-position:center;background-color:#fff;}
+.backtocollection{color:#27c9e0;font-size:12pt;text-align:left;position:absolute;left:5%;}
+.backtocollection:hover{color:#1a1a1a}
+.color{color:#c40000}
+.collectionul{width:98%;margin:0;display:table;padding:1%;background-color:#e7e7e7;}
+.collection{width:50%;display:table;background-color:#fff;margin-top:1%;overflow:hidden;float:left;}
+.collection:hover{opacity:0.8;}
+.collectionul li:first-child, .collectionul li:nth-child(2){margin-top:0;}
+.collectionthumb{display:block;width:50%;float:left;height:80px;background-size:cover;background-position:center;background-color:#f2f2f2;}
+.collectiontextbox{display:table;width:46%;padding-left:4%;float:left;background-size:cover;background-position:center;}
+.collectiontitle{display:table;width:100%;height:40px;line-height:40px;font-size:16pt;color:#1a1a1a;text-align:left;margin-top:8px;text-transform:capitalize;font-weight:300;}
+.collectiondesc{display:table;width:100%;height:25px;line-height:13px;font-size:10pt;color:rgba(0,0,0,0.5);text-align:left;}
+.navigation{width:100%;text-align:center;display:table;float:left;margin:0 auto;padding:0;font-size:16pt;}
+.navigation a{color:#1a1a1a !important;display:inline-table;padding:10px 14px;text-decoration:none;overflow:hidden;margin:0 3px;}
+.navigation a:hover{color:#27c9e0 !important;background-color:rgba(255,255,255,0.7);}
+.navigation span.current{padding:10px 14px;color:rgba(0,0,0,0.3);margin:0 3px;}
+.navigation .dots{display:none;}
+.singletop{position:relative;display:table;width:100%;overflow:hidden;}
+.singletoplayer{position:absolute;display:block;width:100%;overflow:hidden;}
+.singlebottom{position:relative;width:100%;padding-bottom:2px;text-align:center;}
+.entry{width:100%;margin:0 auto;position:relative;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;}::-webkit-scrollbar{display:none;background:transparent}
+.phonebox{position:absolute;height:100%;left:0;right:0;display:table;margin-left:auto;margin-right:auto;}
+.wall{background-color:#fff;}
+.wallblack{background-color:#fff;}
+.paper{background-color:#000b11;outline:1px solid rgba(0,0,0,0.1);}
+.paperblack{background-color:#000b11;-webkit-box-shadow:0px 0px 0px 1px rgba(255,255,255,0.01);-moz-box-shadow:0px 0px 0px 1px rgba(255,255,255,0.01);box-shadow:0px 0px 0px 1px rgba(255,255,255,0.01);}
+.contenthide{display:none}
+.justhide{display:none !important}
+.contentothers img{height:0;width:0;}
+.contentothers{height:0;width:0;color:#e7e7e7;overflow:hidden;}
+.singlemid{display:table;width:100%;margin:0 auto;}
+.bgclear{background-color:transparent;}
+.emptycontent{font-size:14pt;padding:0 0 5%;color:rgba(0,0,0,0.7);line-height:300%;background-color:#fff;}
+.pagecontent{font-size:14pt;margin:5% 7%;color:#222;text-align:left;line-height:130%;}
+.pagecontent p{margin-bottom:2%;}
+.post_title{display:table;font-weight:300;color:#1a1a1a;font-size:20pt;margin:0 auto;text-transform:none;padding:0 4%;line-height:140%;}
+.postinfobox{font-size:10pt;text-align:center;font-weight:400;list-style:none;margin:0 auto;color:rgba(0,0,0,0.2);display:table;padding:0 4px;}
+.postinfobox a{color:rgba(0,0,0,0.3)}
+.postinfobox a:hover{color:#27c9e0;}
+.postinfobox li{float:left;padding:0 6px}
+.postinfobox li .postlitotal{color:rgba(0,0,0,0.2);padding-left:12px;}
+.copyright{width:32px;height:16px;background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papers-8_copyright.png);background-repeat:no-repeat;background-size:contain;}
+.postinfobox1{}
+.postinfobox2{display:none !important}
+.downloadbox{width:880px;margin:0 auto;overflow:hidden;background-color:#f5f5f5;}
+.downloadtop{width:100%;color:#999;margin:0 auto;letter-spacing:1;-webkit-box-shadow:0 !important;-moz-box-shadow:0 !important;box-shadow:0 !important}
+.downloadbtn{width:25%;color:#111;float:left;background-color:#fff;-webkit-border-radius:0 !important;-moz-border-radius:0px !important;border-radius:0px !important;-webkit-box-shadow:0px 0px 1px 0px #ccc;-moz-box-shadow:0px 0px 1px 0px #ccc;box-shadow:0px 0px 1px 0px #ccc;}
+.downloadbtn:hover{background-color:#fafafa;}
+.btnmain{display:block;font-size:12pt;height:55px;line-height:55px;text-align:center;}
+.multibox{margin:0 auto;width:440px;overflow:hidden;text-transform:uppercase;letter-spacing:1;}
+.btnmulti{width:33%;float:left;text-align:center;font-size:11pt;height:55px;line-height:55px;cursor:pointer;background-repeat:no-repeat;background-size:contain;color:transparent;background-position:center;}
+.btnmulti:hover{background-image:none !important;}
+.btnmain00{width:100%;flaot:left;text-align:center;color:#1a1a1a;}
+.btnmain00:hover{}
+.btnleft{margin-right:2%;}
+.btngoback{background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papers-8_goback.png);}
+.btnsharethis{background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papers-8_share.png);}
+.btnflag{background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papers-8_flag.png);}
+.show639{display:none !important}
+.aboutdescription{color:#222;line-height:160%;font-size:12pt;width:620px;margin:0 auto;text-align:left;}
+.aboutdescription p{padding-bottom:6px;}
+.aboutdescription a{color:#1a1a1a;}
+.aboutdescription a:hover{color:#27c9e0;}
+#footer{margin:0;padding:0;width:100%;text-decoration:none;display:table;overflow:hidden;position:relative;background-repeat:repeat;background-size:400px 400px;}
+#footerlong  {width:100%;}
+.line{width:99%;height:1px;background-color:rgba(0,0,0,0.1);margin:0 auto;}
+.foottitle{color:rgba(0,0,0,0.8);font-size:10pt;margin-bottom:10px;letter-spacing:1;width:70%;float:left;display:table;}
+.foottitlelink{color:rgba(0,0,0,0.8);float:right;text-align:right;width:30%;}
+.foottitlelink:hover{color:#27c9e0;}
+.singlenav{width:94%;margin:0 auto;display:table;list-style:none;}
+.randombox{width:49%;display:table;list-style:none;float:left;margin-right:2%}
+.randombox .postul{display:table;overflow:hidden;}
+.collectionbox{width:49%;float:left;display:table;}
+.collectionbox	.collection{width:100%;margin-top:0;display:table;overflow:hidden;}
+.collectionbox	.collectionthumb{width:40%}
+.collectionbox	.collectiontextbox{width:56%}
+.twobox{width:100%;margin:0 auto;display:table;}
+.searchboxoutside{width:100%;display:table;}
+.searchboxbottom{width:100%;margin:0 auto;}
+.searchboxsingle{width:620px;margin:0 auto;}
+.searchbox{width:100%;height:40px !important;line-height:40px;margin:0 auto;position:relative;font-size:16pt !important;background-color:#bde2f2;;background-size:560px 40px;background-position:-520px 0;background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papersco_s_4.png);background-repeat:no-repeat;}
+.searchbox input[type=text]{font-size:14pt;background-color:transparent;color:#1a1a1a;outline:0;border:none;height:40px !important;line-height:40px !important;width:100%;padding-left:40px;}
+.searchbox input[type=text]:focus{color:#1a1a1a;outline:none !important;border:none !important;}
+.searchicon{width:40px;height:40px;}
+.menubox{width:32%;float:left;display:block;margin-left:2%;}
+.menuboxleft{margin-left:0;}
+.linkbox{width:49%;float:right;display:table;}
+.linkboxleft{width:49%;float:left;display:table;}
+.ipapersco{width:100%;height:40px;line-height:39px;text-align:center;font-size:11pt;color:#222;background-color:rgba(255,255,255,0.9);font-weight:bold;}
+.ipapersco:hover{background-color:#fff;color:#1a1a1a;}
+.tagbox{width:49%;margin-left:2%;float:left;font-size:10pt;}
+.tagbox li{list-style:none;margin:0 2%;line-height:200%;display:inline-table;}
+.tagbox a{color:rgba(0,0,0,0.3);}
+.tagbox a:hover{color:#27c9e0;}
+.followbox{display:table;float:left;width:240px;}
+.followboxinside{height:30px;display:table;width:150px;margin:0 auto;}
+.btnshare{float:left;height:30px;width:30px;display:block;margin:2px 8px;background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papersco_s_5.png);background-repeat:no-repeat;background-size:300px 30px;background-position:center center;opacity:0.8;}
+.btnsharewhite{background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papersco_s_7.png) !important;}
+.btnshare:hover{opacity:1;}
+.fbshare{background-position:0 0;}
+.twshare{background-position:-30px 0;}
+.tushare{background-position:-60px 0;}
+.pishare{background-position:-90px 0;}
+.goshare{background-position:-120px 0;}
+.sharebox{width:576px;display:table;margin:0 auto;}
+.shareinsidebox{width:286px;float:left;height:70px;}
+.btnfb{float:left;width:58px;display:block;margin:1px 12px 1px 22px;text-align:center;}
+.btntw{float:left;width:62px;display:block;margin:0px 20px;text-align:center;}
+.btngo{float:left;width:50px;display:block;margin:1px 20px;text-align:center;}
+.shareinsidebox2{width:280px;float:left;}
+.shareinsidebox21{width:190px;float:left;height:auto;}
+.btnfollowtu{float:left;width:170px;display:block;margin:4px 0 0 24px;}
+.btnfollowtw{float:left;width:170px;display:block;margin:12px 0 0 24px;}
+.shareinsidebox22{width:90px;float:left;height:auto;}
+.btnfollowpi{float:left;width:90px;display:block;margin:6px 0 0 0px;}
+.taglist{list-style:none;width:100%;margin:0;display:table;font-weight:normal;}
+.taglist a{color:#666;font-size:10pt;float:left;line-height:30px;padding:0px 8px;margin:2px 4px 2px 0;}
+.taglist a:hover{color:#05b3c1;}
+.footbottom{border-top:0px #ddd solid;}
+.stats{width:99%;margin:20px auto 30px;text-align:right;font-size:8pt;color:rgba(0,0,0,0.3);line-height:180%;}
+.stats a{color:rgba(0,0,0,0.3)}
+.stats a:hover{color:#27c9e0}
+.statsnumber{color:rgba(0,0,0,0.6);font-size:9pt;margin-right:1px;}
+.space{width:100%;display:table;padding-top:48px;}
+.spacehalf{width:100%;display:table;padding-top:24px;}
+.spacethird{width:100%;display:table;padding-top:16px;}
+.spacequarter{width:100%;display:table;padding-top:12px;}
+.appback{width:70px;height:70px;position:fixed;bottom:0px;left:0px;background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papers_appback.png);background-repeat:no-repeat;background-size:cover;cursor:pointer;cursor:hand;z-index:100}
+.shares{width:380px;height:20px;display:block;text-align:center;margin:auto;}
+.fb{float:left;width:33%;}
+.tw{float:left;width:33%;}
+.go{float:left;width:33%;}
+.descriptions{font-size:2pt;color:#f2f2f2;}
+.appishere{width:100%;}
+.appishereinside{height:90px;width:728px;margin-left:auto;margin-right:auto;background-image:url(https://papers.co/wp-content/themes/simon-wp-framework/images/papers_app728.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;border-radius:4px;}
+.appishereinside:hover{opacity:0.8;}
+@media screen and (max-width: 1510px) {
+.singlemid{width:100%;margin:0 auto;background:#f2f2f2;}
+}
+@media screen and (max-width: 1024px) {
+.downloadbox{width:90%;}
+.downloadbtn{width:25%;}
+.postimages{width:880px;}
+}
+@media screen and (max-width: 880px) {
+.postimages{width:100%;}
+.headerbox{width:100%;}
+.content{width:100%;}
+.collectionthumb{width:40%}
+.collectiontextbox{width:56%}
+.collectionul{width:100%;padding:0;background-color:transparent;}
+.taglist{width:94%;margin:0 auto;}
+.twobox{width:94%;}
+.searchboxbottom{width:94%;}
+.catthumb{height:90px;}
+.menu000{display:none !important}
+.footerbox{width:100%;}
+.postimages-single, .postimages{-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;}
+}
+@media screen and (max-width: 819px) {
+.menularge{display:none;}
+.menusmall{display:table;}
+.menu{width:41%;}
+}
+@media screen and (max-width: 768px) {
+.randombox, .collectionbox{width:100%;margin:0 auto;float:none}
+.collectionbox{margin:4% auto 0;}
+.collectionbox .collectionthumb{width:50%;}
+.collectionbox .collectiontextbox{width:46%;}
+.titlebar{font-size:12pt;}
+.tptn_list_count,  .postlidesc{padding-right:7px}
+.postlinew, .postlitotal{padding-left:7px;}
+.post_title{font-size:18pt}
+.btnmulti{font-size:11pt}
+.multibox, .sharesinglebtn, .searchboxsingle{width:92%;}
+.stats{width:96%;}
+.line{width:96%;}
+.menu800{display:none !important}
+.space{padding-top:6%;}
+.spacehalf{padding-top:3%;}
+.spacethird{padding-top:2%;}
+.spacequarter{padding-top:1.5%;}
+.downloadbox{width:96%;}
+.downloadbtn{width:33.3333%;}
+}
+@media screen and (max-width: 729px) {
+.postli, .top12li{width:33.33333%;padding-bottom:33.333333%;}
+.adbox{min-width:468px;}
+.menu768{display:none !important}
+.aboutdescription{font-size:12pt;width:88%;}
+.viewbtn{height:28px;width:28px;right:14px;top:-14px;}
+.hide729{display:none;}
+.appishereinside{height:280px;width:336px;background-image:url(https://papers.co/wp-content/themes/simon-wp-framework/images/papers_app336.jpg);}
+.searchboxbottom{width:96%;}
+}
+@media screen and (max-width: 639px) {
+#header{height:50px;}
+.headericon{height:50px;width:50px}
+.headerright{height:50px;}
+.headercenter{height:50px;}
+.mm-menu > .mm-list{padding:20px 0 10px !important}
+.mm-menu.mm-right .mm-panel, .mm-title{font-size:11pt;}
+.menudesciption{font-size:9pt;}
+.mm-list > li > a,  .mm-list > li > span, .mm-panel > li > a,  .mm-panel > li > span{line-height:19px !important;padding:16px 10px 16px 25px !important}
+.mm-menu.mm-bottom{height:380px !important;}
+.mm-menu.mm-right{width:240px !important;}
+.mm-menu.mm-right.menublue{width:280px !important;}
+.menu{font-size:11pt}
+.mm-list a.mm-subopen{height:18px;}
+.mm-counter{padding-top:20px;}
+.triangle{border-width:7px 7px 0 0;}
+.postlidesc, .tptn_list_count{font-size:7pt;}
+.tptn_list_count,  .postlidesc{padding-right:6px}
+.postlinew, .postlitotal{padding-left:6px}
+.catthumb{height:70px;}
+.collectionthumb{height:65px;}
+.collectiontitle{height:35px;line-height:35px;font-size:14pt;margin-top:5px;}
+.collectiondesc{height:20px;line-height:10px;font-size:10pt;}
+.emptycontent{font-size:12pt !important;}
+.pagecontent{font-size:11pt !important;}
+.prevbtn, .nextbtn{width:25px;height:60px;top:10%;}
+.prevbtn:hover, .nextbtn:hover{background-color:none;}
+.btnmain{font-size:11pt;height:50px;line-height:50px;}
+.selectanddown{height:51px;}
+.download{background-size:45px 90px;background-position:center 3px;}
+.select{font-size:13pt !important;}
+.btnmulti a, .btnmulti{height:50px;line-height:50px;}
+.postinfobox1{display:none !important;}
+.postinfobox2{display:table !important;margin-top:2%}
+.collectionbox{margin:5% auto 0;}
+.linkbox, .linkboxleft{width:96%;float:none;margin:0 auto;}
+.sharehomebox, .menu2box{width:100%;}
+.menu2box{margin-right:0;}
+.menu720{display:none !important}
+.show639{display:table !important;display:-moz-box !important}
+.taglist a{font-size:10pt;padding:0px 6px;line-height:28px;}
+.appback{width:60px;height:60px;}
+}
+@media screen and (max-width: 580px) {
+.collection{width:100%;margin-top:2%;}
+.collectionthumb{width:50%;}
+.collectiontextbox{width:46%;}
+.collectionul li:nth-child(2){margin-top:2%;}
+.selectanddown{width:94%;}
+.select{width:75%;}
+.download{width:25%;}
+.sharebox{width:100%;margin:0 auto;}
+.shareinsidebox{width:286px;float:none;margin:0 auto;}
+.btnfb	{}
+.btntw	{}
+.btngo 	{}
+.shareinsidebox2{width:280px;float:none;margin:16px auto 0;}
+.shareinsidebox21{}
+.btnfollowtu{margin:4px 0 0 16px;}
+.btnfollowtw{margin:12px 0 0 16px;}
+.shareinsidebox22{}
+.btnfollowpi{}
+}
+@media screen and (max-width: 469px) {
+.adbox{min-width:320px;}
+.adbox2{min-width:300px;}
+.mm-header{padding:21px 20px 0 20px;height:61px;}
+.mm-menu.mm-right > .mm-panel{padding:61px 0 !important;}
+.mm-menu .mm-header a:before{margin-top:27px;}
+.menuicon{margin-left:8px;margin-top:25px;}
+.menu{line-height:57px;}
+.triangle{border-width:6px 6px 0 0;}
+.postlidesc, .tptn_list_count{font-size:6pt;}
+.tptn_list_count,  .postlidesc{padding-right:5px}
+.postlinew, .postlitotal{padding-left:5px}
+.titlebar{font-size:11pt;}
+.description{margin-left:8px}
+.catthumb{height:60px;}
+.collectionthumb{width:40%;}
+.collectiontextbox{width:56%;}
+.collectionbox .collectionthumb{width:40%;}
+.collectionbox .collectiontextbox{width:56%;}
+.multibox{width:92%;}
+.select{font-size:12pt !important;}
+.searchbox{font-size:11pt !important;background-size:420px 30px;background-position:-385px 5px;}
+.searchbox input[type=text]{padding-left:40px;font-size:11pt}
+.space{padding-top:8%;}
+.spacehalf{padding-top:4%;}
+.spacethird{padding-top:2.7%;}
+.spacequarter{padding-top:2%;}
+.collectionbox{margin:6% auto 0;}
+.tagbox{margin-top:4%;}
+.foottitle{font-size:9pt;margin-bottom:6px;}
+.navigation{font-size:14pt;}
+.navigation a{padding:8 12px;}
+.btnmulti{font-size:10pt;}
+.menu600{display:none !important}
+.menu540{display:none !important}
+.followbox{width:100%;margin-bottom:4%;}
+.stats{text-align:center}
+}
+@media screen and (max-width: 429px) {
+.topmenu{height:36px;width:320px;margin:2px auto 0;}
+.topmenu a{font-size:11pt;height:36px;line-height:36px;}
+}
+@media screen and (max-width: 399px) {
+#header, .headercolor, .logo, .menu, .link, .friend, .headerbox{height:50px;}
+.mm-list > li > a,  .mm-list > li > span, .mm-panel > li > a,  .mm-panel > li > span{line-height:19px !important;padding:14px 10px 14px 20px !important}
+.popularbtn, .btnmain00, .selectanddown, .multibox, .searchbox, .navigation a, .ipapersco, .topmenu, .downloadbox{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.menu{line-height:51px;font-size:10pt;}
+.mm-header{height:51px;padding:16px 20px 0 20px}
+.mm-menu.mm-right > .mm-panel{padding:51px 0 !important;}
+.mm-menu .mm-header a:before{margin-top:21px;}
+.mm-menu.mm-right{width:180px !important;}
+.mm-menu.mm-right.menublue{width:220px !important;}
+.mm-counter{padding-top:16px;}
+.menuicon{margin-top:22px;margin-left:7px}
+.menuiconright{height:7px;margin-left:4px}
+.menuiconleft{height:7px;}
+.mm-menu.mm-right .mm-panel, .mm-title{font-size:10pt;}
+.menudesciption{font-size:8pt;}
+.triangle{border-width:5px 5px 0 0;}
+.catthumb{height:50px;}
+.titlebar{font-size:11pt;}
+.description{margin-left:8px}
+.descriptionbar{height:30px;line-height:10px;}
+.collectiontitle{font-size:13pt;margin-top:5px;}
+.collectiondesc{line-height:10px;font-size:9pt;}
+.popularbar{width:80%;font-size:10pt;}
+.popularbtn{height:34px;line-height:32px;}
+.ipapersco{font-size:11pt;}
+.post_title{font-size:16pt;}
+.postinfobox{font-size:9pt;}
+.copyright{width:26px;height:13px;}
+.singlenav, .stats{width:92%;}
+.twobox{width:96%;}
+.taglist{width:96%;}
+.postlinew, .postlitotal{padding-left:4px}
+.tptn_list_count,  .postlidesc{padding-right:4px}
+.download{background-size:40px 80px;background-position:center 3px;}
+.btnmain{font-size:10pt;height:45px;line-height:47px;}
+.selectanddown{height:46px;}
+.select{font-size:11pt !important;}
+.btnmulti{font-size:9pt;height:45px;line-height:47px;}
+.navigation{font-size:13pt;}
+.navigation a{padding:7px 10px 8px;margin:0 3px;}
+.navigation span.current{margin:0 1px;}
+.space{padding-top:10%;}
+.spacehalf{padding-top:5%;}
+.spacethird{padding-top:3.3333%;}
+.spacequarter{padding-top:2.5%;}
+.collectionbox{margin:8% auto 0;}
+.tagbox{margin-top:5%;}
+.taglist a{font-size:10pt;padding:0px 4px;line-height:26px;}
+.shares{width:320px;}
+}
+@media screen and (max-width: 359px) {
+#header{height:45px;}
+}
+@media screen and (max-width: 335px) {
+.appishereinside{height:250px;width:300px;background-image:url(https://papers.co/wp-content/themes/simon-wp-framework/images/papers_app300.jpg);}
+}
+@media screen and (max-width: 320px) {
+.topmenu	{ -webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; }
+.postli, .top12li {width: 50%; padding-bottom: 50%; }
+.menu		{ line-height: 41px;  font-size: 9pt; }
+.mm-header { height: 47px; padding: 14px 20px 0 20px  }
+.mm-menu.mm-right > .mm-panel { padding: 47px 0 !important;}
+.mm-menu .mm-header a:before { margin-top: 21px;}
+.mm-counter { padding-top: 15px; }
+.menuicon { margin-top:17px; margin-left:7px}
+.menuiconright	{ height: 7px; margin-left: 4px}
+.menuiconleft	{ height: 7px; }
+.tagbox	{ font-size: 9pt;}
+.wall	 {
+-webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.02);
+-moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.02);
+box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.02);
+}
+.stats { font-size: 9pt; }
+.hide320	{ display: none;}
+}.entry-all, .singletopbg-all{height:490px;}
+.phonebox-all{width:1270px;height:100%;display:block}
+.phonebox-about{display:block !important;}
+.mainimage{left:432px;outline:1px rgba(0,0,0,0.1) solid;}
+.iphone{left:44px;}
+.galaxy-all{left:226px}
+.ipadmini-all{right:42px;}
+.mainimage{position:absolute;width:470px;height:470px;overflow:hidden;z-index:12;background-size:contain;bottom:0;}
+.iphone{width:166px;height:294px;z-index:15;bottom:0;position:absolute;display:table;border-top-left-radius:22px;border-top-right-radius:22px;}
+.iphoneimage{left:8px;width:150px;height:254px;bottom:0;position:absolute;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.galaxy-all{position:absolute;width:190px;height:340px;z-index:14;bottom:0;display:table;border-top-left-radius:30px;border-top-right-radius:30px;}
+.galaxyimage-all{position:absolute;bottom:0;left:8px;width:174px;height:304px;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.ipadmini-all{position:absolute;width:310px;height:420px;z-index:13;bottom:0;display:table;border-top-left-radius:24px;border-top-right-radius:24px;}
+.ipadminiimage-all{position:absolute;bottom:0;left:14px;width:284px;height:376px;background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-box-shadow:0px 0px 0px 1px rgba(255,255,255,0.1);-moz-box-shadow:0px 0px 0px 1px rgba(255,255,255,0.1);box-shadow:0px 0px 0px 1px rgba(255,255,255,0.1);}
+.btndownloadone{width:360px;background-image:url(//papers.co/wp-content/themes/simon-wp-framework/images/papers-8_download3.png);}
+.ipadminihomeimage, .ipadairstartimage{z-index:18}
+.entry-ipad, .singletopbg-ipad{height:530px;}
+.phonebox-ipad{width:1024px;display:none;}
+.ipadmini{left:20px;}
+.ipadair{left:328px;}
+.ipadminihome{left:712px;}
+.ipadminibox{width:292px;height:392px;z-index:15;bottom:0;position:absolute;display:table;border-top-left-radius:20px;border-top-right-radius:20px;}
+.ipadminiimage{left:14px;width:264px;height:350px;bottom:0;position:absolute;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.ipadairbox{width:368px;height:476px;z-index:15;bottom:0;position:absolute;display:table;border-top-left-radius:22px;border-top-right-radius:22px;}
+.ipadairimage{left:20px;width:326px;height:432px;bottom:0;position:absolute;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.btndownloadbox{margin:0 auto;display:table;width:600px;}
+.btndownloadbox2{margin:0 auto;display:table;width:640px;}
+.btndownloadright{width:49%;float:left;}
+.btndownloadleft{width:49%;float:left;margin-right:2%;}
+.iphone5lockimage, .iphone5homeimage{z-index:18}
+.phonebox-iphone5{width:1024px;display:none;}
+.iphone5start{left:100px;}
+.iphone5empty{left:400px;}
+.iphone5normal{left:700px;}
+.iphone5box{width:228px;height:428px;z-index:15;bottom:0;position:absolute;display:table;border-top-left-radius:28px;border-top-right-radius:28px;}
+.iphone5image{left:12px;width:204px;height:360px;bottom:0;position:absolute;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.iphone5startimage{-webkit-box-shadow:0px 0px 0px 1px rgba(255,255,255,0.05);-moz-box-shadow:0px 0px 0px 1px rgba(255,255,255,0.05);box-shadow:0px 0px 0px 1px rgba(255,255,255,0.05);}
+#download-iphone5{display:none;}
+.btndownloadbox-iphone5{margin:0 auto;display:table;width:400px;}
+.btndownloadbox2-iphone5{margin:0 auto;display:table;width:440px;}
+.phonebox-mac{width:1140px;display:none;}
+.macbookpro{left:40px;bottom:8px;width:370px;height:244px;border-top-left-radius:12px;border-top-right-radius:12px;background-color:#000b11;z-index:16;position:absolute;display:table;}
+.macbookproimage{left:14px;top:14px;width:344px;height:216px;position:absolute;background-color:#222;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.macbookprobottom{left:22px;bottom:0;width:404px;height:8px;border-radius:1px;background-color:#e7e7e7;z-index:16;position:absolute;display:block;}
+.imac{left:342px;bottom:100px;width:622px;height:368px;border-top-left-radius:16px;border-top-right-radius:16px;background-color:#000b11;z-index:15;position:absolute;display:table;}
+.imacimage{left:26px;top:26px;width:570px;height:316px;background-color:#222;position:absolute;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.imacbottom{left:342px;bottom:42px;width:622px;height:58px;background-color:#ddd;border-bottom-left-radius:16px;border-bottom-right-radius:16px;z-index:15;position:absolute;display:block;}
+.imactrapezoid{left:590px;bottom:0;z-index:15;position:absolute;display:block;border-bottom:42px solid #ccc;border-left:6px solid transparent;border-right:6px solid transparent;height:0;width:114px;}
+.macbookair{left:852px;bottom:6px;width:252px;height:154px;border-top-left-radius:10px;border-top-right-radius:10px;background-color:#ddd;z-index:17;position:absolute;display:table;-webkit-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);}
+.macbookairimage{left:14px;top:14px;width:222px;height:124px;background-color:#222;position:absolute;background-repeat:no-repeat;background-position:center;background-size:cover;-webkit-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.0.5);-moz-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.0.5);box-shadow:0px 0px 0px 1px rgba(0,0,0,0.0.5);}
+.maccbookairbottom{left:846px;bottom:0;width:264px;height:6px;background-color:#e7e7e7;border-bottom-left-radius:24px;border-bottom-right-radius:24px;z-index:18;position:absolute;display:block;-webkit-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);}
+.btndownloadbox{margin:0 auto;display:table;width:730px;}
+.downloadname{float:left;width:35%;line-height:60px;font-size:18pt;text-align:center;font-weight:300;}
+.downloadcontent{float:left;width:65%;}
+.btndownloadright{width:49%;float:left;}
+.btndownloadleft{width:49%;float:left;margin-right:2%;}
+.btndownload1, .btndownload2{width:32%;float:left;margin-right:2%;}
+.btndownload3{width:32%;float:left;}
+@media screen and (max-width: 1023px) { .entry-all, .singletopbg-all{height:480px;}
+.phonebox-all{width:1204px;}
+.mainimage{left:516px;}
+.iphone{left:20px;z-index:12;}
+.galaxy-all{left:996px;}
+.ipadmini-all{left:196px;}
+.iphone5start{left:20px;}
+.iphone5empty{left:290px;}
+.iphone5normal{left:560px;}
+.phonebox-iphone5{width:810px;}
+}	
+@media screen and (max-width: 819px){}
+@media screen and (max-width: 768px) { .phonebox-ipad{width:1058px;}
+.ipadmini{left:46px;}
+.ipadair{left:358px;}
+.ipadminihome{left:746px;}
+}
+@media screen and (max-width: 729px) {
+.entry-all, .singletopbg-all{height:360px;}
+.phonebox-all{width:1010px;}
+.mainimage{width:350px;height:350px;left:400px}
+.ipadmini-all{left:764px;}
+.galaxy-all{left:196px;}
+.iphone{left:16px}
+.ipadmini-all{width:228px;height:310px;border-top-left-radius:14px;border-top-right-radius:14px;}
+.ipadminiimage-all{left:12px;width:204px;height:272px;}
+.phonebox-ipad{width:768px;}
+.ipadmini{left:14px;}
+.ipadair{left:246px;}
+.ipadminihome{left:536px;}
+.ipadminibox{width:218px;height:294px;border-top-left-radius:15px;border-top-right-radius:15px;}
+.ipadminiimage{left:10px;width:198px;height:262px;}
+.ipadairbox{width:276px;height:358px;border-top-left-radius:16px;border-top-right-radius:16px;}
+.ipadairimage{left:16px;width:244px;height:322px;}
+.btndownloadbox{width:70%;}
+.btndownloadbox2{width:80%;}
+.phonebox-iphone5{width:620px;}
+.iphone5start{left:20px;}
+.iphone5empty{left:222px;}
+.iphone5normal{left:424px;}
+.iphone5box{width:176px;height:328px;border-top-left-radius:22px;border-top-right-radius:22px;}
+.iphone5image{left:10px;width:156px;height:274px;}
+.phonebox-mac{width:874px;}
+.macbookpro{left:30px;bottom:6px;width:280px;height:184px;border-top-left-radius:8px;border-top-right-radius:8px;}
+.macbookproimage{left:10px;top:10px;width:260px;height:162px;}
+.macbookprobottom{left:16px;bottom:0;width:308px;height:6px;border-radius:1px;}
+.imac{left:238px;bottom:76px;width:470px;height:278px;border-top-left-radius:12px;border-top-right-radius:12px;}
+.imacimage{left:20px;top:20px;width:430px;height:238px;}
+.imacbottom{left:238px;bottom:32px;width:470px;height:44px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;}
+.imactrapezoid{left:420px;bottom:0;border-bottom:32px solid #ccc;border-left:4px solid transparent;border-right:4px solid transparent;width:96px;}
+.macbookair{left:640px;bottom:4px;width:190px;height:116px;border-top-left-radius:8px;border-top-right-radius:8px;}
+.macbookairimage{left:12px;top:12px;width:168px;height:92px;}
+.maccbookairbottom{left:636px;bottom:0px;width:198px;height:4px;border-bottom-left-radius:20px;border-bottom-right-radius:20px;}
+.btndownloadbox{width:92%;}
+.downloadname{line-height:60px;font-size:16pt;}
+}
+@media screen and (max-width: 639px) {
+.btndownloadone{width:340px;}
+.btndownloadleft{width:100%;margin-right:0%;margin-bottom:2%}
+.btndownloadright{width:100%;}
+.downloadname{line-height:50px;font-size:14pt;}
+}
+@media screen and (max-width: 469px) {	
+.btndownloadbox{width:80%;}
+.btndownloadbox2{width:88%;}
+.btndownloadbox-iphone5{width:90%;}
+.btndownloadbox2-iphone5{width:90%;}
+}
+@media screen and (max-width: 399px) {
+.entry-all, .singletopbg-all{height:260px;}
+.phonebox-all{width:500px}
+.iphone{left:400px;}
+.galaxy-all{left:12px;}
+.mainimage{width:250px;height:250px;left:142px}
+.ipadmini-all{display:none}
+.btndownloadone{width:240px;}
+.iphone{width:88px;height:160px;border-top-left-radius:12px;border-top-right-radius:12px;}
+.iphoneimage{left:6px;width:76px;height:132px;}
+.galaxy-all{width:122px;height:214px;border-top-left-radius:20px;border-top-right-radius:20px;}
+.galaxyimage-all{left:6px;width:110px;height:190px;}
+.phonebox-ipad{width:768px;}
+.ipadmini{left:10px;}
+.ipadair{left:164px;}
+.ipadminihome{left:356px;}
+.ipadminibox{width:144px;height:196px;border-top-left-radius:10px;border-top-right-radius:10px;}
+.ipadminiimage{left:6px;width:132px;height:174px;}
+.ipadairbox{width:182px;height:238px;border-top-left-radius:11px;border-top-right-radius:11px;}
+.ipadairimage{left:10px;width:162px;height:214px;}
+.btndownloadleft{margin-bottom:5%}
+.phonebox-iphone5{width:440px;}
+.iphone5start{left:14px;}
+.iphone5empty{left:156px;}
+.iphone5normal{left:298px;}
+.iphone5box{width:128px;height:236px;border-top-left-radius:16px;border-top-right-radius:16px;}
+.iphone5image{left:8px;width:112px;height:198px;}
+.phonebox-mac{width:520px;}
+.macbookpro{left:304px;bottom:4px;width:184px;height:120px;border-top-left-radius:4px;border-top-right-radius:4px;}
+.macbookproimage{left:6px;top:6px;width:172px;height:106px;}
+.macbookprobottom{left:296px;bottom:0;width:200px;height:4px;border-radius:1px;}
+.imac{left:48px;bottom:50px;width:304px;height:180px;border-top-left-radius:8px;border-top-right-radius:8px;}
+.imacimage{left:12px;top:12px;width:280px;height:156px;}
+.imacbottom{left:48px;bottom:22px;width:304px;height:28px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+.imactrapezoid{left:166px;bottom:0;border-bottom:22px solid #ccc;border-left:4px solid transparent;border-right:4px solid transparent;width:58px;}
+.macbookair{left:18px;bottom:2px;width:124px;height:76px;border-top-left-radius:4px;border-top-right-radius:4px;}
+.macbookairimage{left:8px;top:8px;width:108px;height:60px;}
+.maccbookairbottom{left:16px;bottom:0;width:128px;height:2px;border-bottom-left-radius:24px;border-bottom-right-radius:24px;}
+.downloadname{float:left;width:45%;line-height:40px;}
+.downloadcontent{float:left;width:55%;}
+.btndownloadright{width:100%;float:left;}
+.btndownloadleft{width:100%;float:left;margin-right:0%;margin-bottom:3%;}
+.btndownload1, .btndownload2{width:100%;float:left;margin-right:0%;margin-bottom:3%;}
+.btndownload3{width:100%;float:left;}
+}
+@media screen and (max-width: 320px) {	
+.phonebox-all	{width: 450px;}
+.entry-all, .singletopbg-all	{ height: 240px;   }
+.mainimage	{ width: 230px; height: 230px; left: 84px; } 
+.galaxy-all	{ left: 322px; z-index: 11; }
+.iphone	{left: 8px} .phonebox-ipad	{width: 476px; }
+.ipadmini	{left: 10px;}
+.ipadair	{left: 128px;}
+.ipadminihome	{left: 322px;} .phonebox-iphone5	{width: 474px; }
+.iphone5start	{left: 20px;}
+.iphone5empty	{left: 172px;}
+.iphone5normal	{left: 324px;}
+}
